@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>NTS Form Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="nts-wrapper">
+      <div class="form-container">
+        <div class="logo">
+          <img src="./assets/3.png" alt="" />
+        </div>
+        <div class="heading">
+          <h3>Candidate Portal</h3>
+        </div>
+        <form action="" class="form-main-wrapper w-100">
+            <!-- First and Last Name  -->
+          <div class="field field1 name d-flex gap-2">
+            <div class="first-name w-50">
+              <label for="firstname" class="label text-uppercase fw-bold">First Name *</label>
+              <div class="inputfield first-name-sub position-relative"><input
+                type="text"
+                id="firstname"
+                class="inputfield first_name form-control ps-5 rounded-1 "
+                value=""
+                name="firstname"
+                placeholder="First Name"
+              />
+              <i class="bi bi-person position-absolute text-body-tertiary"></i></div>
+            </div>
+            <div class="last-name w-50">
+              <label for="lastname" class="label text-uppercase fw-bold">Last Name *</label>
+              <div class="last-name-sub position-relative"><input
+                type="text"
+                id="lastname"
+                class="inputfield last_name form-control ps-5 rounded-1 "
+                value=""
+                name="lastname"
+                placeholder="Last Name"
+              />
+              <i class="bi bi-person position-absolute text-body-tertiary"></i></div>
+            </div>
+        </div>
+        <!-- Radio Buttons  -->
+            <div class="radio-field mt-5">
+                <span  class="label text-uppercase fw-bold">Select Option*
+                </span>
+                <div class="radio-box d-flex flex-column">
+                    <div class="d-flex"><input class="form-check-input" type="radio" name="flexRadioDefault"  value="Pakistani" id="flexRadioDefault1" checked>
+                        <label class="form-check-label ps-2" for="flexRadioDefault1">
+                            Pakistani
+                        </label></div>
+                    <div class="d-flex"><input class="form-check-input" type="radio" name="flexRadioDefault" value="Foriegner" id="flexRadioDefault2">
+                        <label class="form-check-label ps-2" for="flexRadioDefault2">
+                            Foriegner
+                        </label></div>
+                </div>
+            </div>
+
+            <!-- CNIC/B-form  -->
+            <div class="field field3 name d-flex gap-2">
+                <div class="first-name w-100">
+                  <label for="cnic-id" class="label text-uppercase fw-bold">CNIC/B-form <span class="text-danger fw-bold text-uppercase cnic">CNICshould be without dashes*</span></label>
+                  <div class="first-name-sub position-relative"><input
+                    type="text"
+                    id="cnic-id"
+                    class="inputfield first_name form-control ps-5 rounded-1 "
+                    value=""
+                    name="cnic-id"
+                    placeholder="xxxxxxxxxxxxxxxxxx"
+                  />
+                  <i class="bi bi-file-earmark-text position-absolute text-body-tertiary"></i></div>
+                </div>
+                
+            </div>
+            <div class="note text-danger">
+                <p>* Note:</p>
+                <ul>
+                    <li>Please use your own CNIC number for registration.</li>
+                    <li>Please make sure your CNIC is Correct.</li>
+                    <li>CNIC,Phone Number and Email can not be changed after registration.</li>
+                </ul>
+            </div>
+            <!-- CNIC/B-form  -->
+            <div class="field field3 mobile-wrapper d-flex gap-2">
+                <div class="mobile-wrapper-sub w-100">
+                  <label for="mobile" class="label text-uppercase fw-bold">Mobile number</span></label>
+                  <div class="mobiles-sub position-relative"><input
+                    type="number"
+                    id="mobile"
+                    class="inputfield mobiles form-control ps-5 rounded-1 "
+                    value=""
+                    name="mobile"
+                    placeholder="03xxxxxxxxx"
+                  />
+                  <i class="bi bi-telephone position-absolute text-body-tertiary"></i></div>
+                </div>
+            </div>
+            <div class="note text-danger">
+                <p class="text-body-tertiary">* Note:</p>
+                <ul>
+                    <li>Please make sure you have not blocked the Business/ unwanted SMS through PTA Instruction by Reg to 3627, if so please unblock by sending sms "Unreg" to 3627 in order to receive SMS alerts from NTS.</li>
+                   
+                </ul>
+            </div>
+            <div class="field field3 upload-wrapper d-flex gap-2">
+                <div class="upload-wrapper-sub w-100">
+                  <label for="upload" class="label text-uppercase fw-bold">Upload*</span></label>
+                  <div class="uploads-sub position-relative"><input
+                    type="file"
+                    id="upload"
+                    class="inputfield uploads form-control ps-5 rounded-1 "
+                    value=""
+                    name="upload"
+                    placeholder="Upload Files"
+                  />
+                  <i class="bi bi-cloud-upload position-absolute text-body-tertiary"></i></div>
+                </div>
+            </div>
+            <div class="field field3 email-wrapper d-flex gap-2">
+                <div class="email-wrapper-sub w-100">
+                  <label for="email" class="label text-uppercase fw-bold">Email*</span></label>
+                  <div class="emails-sub position-relative"><input
+                    type="email"
+                    id="email"
+                    class="inputfield emails form-control ps-5 rounded-1 "
+                    value=""
+                    name="email"
+                    placeholder="Email*"
+                  />
+                  <i class="bi bi-lock position-absolute text-body-tertiary"></i></div>
+                </div>
+            </div>
+            <div class="field field3 password-wrapper d-flex gap-2">
+                <div class="password-wrapper-sub w-100">
+                  <label for="password" class="label text-uppercase fw-bold">Password*</span></label>
+                  <div class="passwords-sub position-relative"><input
+                    type="password"
+                    id="password"
+                    class="inputfield passwords form-control ps-5 rounded-1 "
+                    value=""
+                    name="password"
+                    placeholder="Password"
+                  />
+                  <i class="bi bi-lock position-absolute text-body-tertiary"></i></div>
+                </div>
+            </div>
+            <div class="field field3 confirm-password-wrapper d-flex gap-2">
+                <div class="confirm-password-wrapper-sub w-100">
+                  <label for="confirm-password" class="label text-uppercase fw-bold">Confirm Password*</span></label>
+                  <div class="confirm-passwords-sub position-relative"><input
+                    type="confirm-password"
+                    id="confirm-password"
+                    class="inputfield confirm-passwords form-control ps-5 rounded-1 "
+                    value=""
+                    name="confirm-password"
+                    placeholder="Confirm Password"
+                  />
+                  <i class="bi bi-lock position-absolute text-body-tertiary"></i></div>
+                </div>
+            </div>
+            <div class="form-check my-3">
+                <input class="form-check-input" type="checkbox" value="" name="agree" id="flexCheckDefault">
+                <label class="form-check-label label text-uppercase" for="flexCheckDefault">
+                    I agree to the <span class="text-primary">Terms and Conditions.</span>
+                </label>
+              </div>
+              <div class="d-grid gap-2 position-relative submit pb-3 border border-0 border-bottom">
+                
+                <button class="btn btn-warning text-white" type="submit" >Button</button>
+                <i class="bi bi-arrow-right-short position-absolute"></i>
+              </div>
+            <div class="already d-flex justify-content-center pt-3">
+                <span class="label">Already have an account?<span class="ps-2"><a href="">Sign in</a></span></span>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

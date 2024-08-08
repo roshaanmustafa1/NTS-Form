@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.nts-wrapper{
+    background-image: url("./assets/1.b.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+.form-container{
+    width: 885px;
+    height: auto;
+    margin: 0px auto;
+    background-color: white;
+    padding: 25px;
+    box-shadow: -8px 20px 25px 0 rgba(25, 42, 70, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 10px 0px;
+    border-top: 1px solid #0000001c;
+    border-bottom: 1px solid #0000001c;
+}
+.heading h3{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Rubik', Helvetica, Arial, serif;
+    color: #475F7B;
+    letter-spacing: 0.15px;
+    padding-top: 5px;
+}
+
+
+/* Form Css */ 
+input::placeholder{
+    font-size: 16px !important;
+    color: #475f7ba7 !important;
+    font-weight: 400 !important;
+}
+.field{
+    .bi{
+        top: 6px;
+        left: 15px;
+        transition: 0.2s all;
+    }
+} 
+/* .first_name:focus + .bi {
+    color: #5191ed !important;
+    transition: 0.2s all;
+} */
+.inputfield:focus + .bi {
+    color: #5191ed !important;
+    transition: 0.2s all;
+}
+
+.label  {
+    font-size: 12px;
+    font-weight: 500;
+    color: #475F7B;
+    margin-bottom: 7.5px;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+/* radio css */
+.radio-field{
+    .radio-box label{
+        font-size: 16px;
+    color: #475f7ba7;
+    font-weight: 400;
+    }
+}
+
+.form-check-input:checked {
+    
+    border-color: white !important;
+    outline: 1px solid #b4b4b8 !important;
+}
+input {
+    --bs-form-check-bg-image: none !important;
+}
+.form-check-input:focus{
+    box-shadow: none !important; 
+}
+
+/* cnic field css */
+.cnic {
+    font-size: 9px;
+}
+
+.bi-arrow-right-short {
+    right: 15px;
+    top: 7px;
+    color: white;
+    font-weight: 700;
+    
+}
+.submit .btn{
+    box-shadow: 0 2px 4px 0 rgba(90, 141, 238, 0.5) !important;
+    background-color: #F78410 !important;
+}
